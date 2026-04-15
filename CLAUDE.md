@@ -18,6 +18,32 @@ Commands also work from inside `apps/www` directly (bypasses Turborepo caching).
 
 > Note: `pnpm deploy` (without `run`) is a pnpm built-in — always use `pnpm run deploy` or `turbo deploy`.
 
+## Commits
+
+All commits must follow the [Conventional Commits](https://www.conventionalcommits.org/) format with an emoji code after the colon:
+
+```text
+type(scope): :emoji: short description
+```
+
+The Husky `commit-msg` hook enforces this via commitlint — commits that don't match will be rejected.
+
+**Use `git cz` instead of `git commit`** to get the interactive cz-git prompt, which handles type selection, emoji insertion, and scope suggestions (drawn from `apps/*` and `packages/*`) automatically.
+
+| Type | Emoji |
+| - | - |
+| `feat` | `:sparkles:` |
+| `fix` | `:bug:` |
+| `docs` | `:memo:` |
+| `style` | `:lipstick:` |
+| `refactor` | `:recycle:` |
+| `perf` | `:zap:` |
+| `test` | `:white_check_mark:` |
+| `build` | `:package:` |
+| `ci` | `:ferris_wheel:` |
+| `chore` | `:hammer:` |
+| `revert` | `:rewind:` |
+
 ## Architecture
 
 **pnpm + Turborepo monorepo** with workspaces at `apps/*` and `packages/*`.

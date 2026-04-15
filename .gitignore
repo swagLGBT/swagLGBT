@@ -1,7 +1,4 @@
 node_modules/
 .turbo/
-.worktrees/
-.claude/worktrees
-docs/superpowers
 packages/*/dist/
 apps/*/dist/
