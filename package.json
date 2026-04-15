@@ -1,0 +1,14 @@
+{
+  "name": "swaglgbt",
+  "private": true,
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "preview": "turbo preview",
+    "deploy": "turbo deploy"
+  },
+  "devDependencies": {
+    "turbo": "latest"
+  }
+}
