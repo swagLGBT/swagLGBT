@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "www",
+  "compatibility_date": "2026-04-12",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./dist"
+  },
+  "observability": {
+    "enabled": true
+  },
+  "workers_dev": true,
+  "routes": [{ "pattern": "swag.lgbt", "custom_domain": true }]
+}
