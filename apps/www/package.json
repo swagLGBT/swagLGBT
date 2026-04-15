@@ -10,15 +10,17 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "generate-types": "wrangler types",
     "deploy": "wrangler deploy"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^13.1.8",
-    "astro": "^6.1.5"
+    "astro": "^6.1.5",
+    "astro-plugin-wrangler-types": "workspace:*"
   },
   "devDependencies": {
-    "wrangler": "^4.81.1"
+    "@types/node": "^25.6.0",
+    "vite": "^7",
+    "wrangler": "^4.82.0"
   },
   "overrides": {
     "vite": "^7"
